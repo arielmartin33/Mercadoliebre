@@ -1,61 +1,63 @@
-body {
-    background-color: #EAC926;
-    font-family: 'roboto', sans-serif;
+.header{
+    background-color:#EAC926;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
-.search-bar{
-    height: 50px;
-    font-family: 'roboto', sans-serif;
-    font-size: 30px;
-    background-color: #ebebeb;
+.textos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
-.logo{
-    width: 340px;
-}
-.titulares {
+.titulares{
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
 }
-.precios {
+.precios{
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
-.descuentos {
+.descuentos{
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-.descripcion {
+.descripciones{
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
-.compras{
+.centrar{
     text-align: center;
-}
-.lupa{
-    font-size: 18px;
-    background-color: #ebebeb;
-}
-.burger-menu{
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    background-color: #1259c3;
-    width: 65px;
-    height: 65px;
-    border-radius: 10px;
-    margin: 15px;
-}
-.footer{
-    text-align: center;
-    background-color: #ebebeb;
-}
-.footer1{
-    text-align: center;
-    background-color: #ebebeb;
-}
-.icono-footer{
-    size: 2em;
+    font-size: 70px;
+    line-height: 1.5;
     color: #1259c3;
 }
-.bloque-texto{
-    font-size: 12px;
-    font-family: 'roboto', sans-serif;
+.fondo-color{
+    height: 100px;
+    width: 100px;
+    background-color:#1259c3;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.search{
+    width: 400px;
+    font-size: 26px;
+}
+.logo{
+    width: 360px;
+}
+.centrar-mensaje{
     text-align: center;
-    display: inline-flexbox;
+    line-height: 1.5;
+}
+.fondo-lupa{
+    height: 20px;
+    width: 20px;
+    background-color:white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.textos-footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
 }
