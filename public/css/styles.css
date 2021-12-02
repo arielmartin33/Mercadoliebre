@@ -1,0 +1,63 @@
+.header{
+    background-color:#EAC926;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.textos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.titulares{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+.precios{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.descuentos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.descripciones{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.centrar{
+    text-align: center;
+    font-size: 70px;
+    line-height: 1.5;
+    color: #1259c3;
+}
+.fondo-color{
+    height: 100px;
+    width: 100px;
+    background-color:#1259c3;
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.search{
+    width: 400px;
+    font-size: 26px;
+}
+.logo{
+    width: 360px;
+}
+.centrar-mensaje{
+    text-align: center;
+    line-height: 1.5;
+}
+.fondo-lupa{
+    height: 20px;
+    width: 20px;
+    background-color:white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.textos-footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
