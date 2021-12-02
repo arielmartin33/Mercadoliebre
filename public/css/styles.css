@@ -1,0 +1,61 @@
+body {
+    background-color: #EAC926;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+}
+.search-bar{
+    height: 50px;
+    font-family: 'roboto', sans-serif;
+    font-size: 30px;
+    background-color: #ebebeb;
+}
+.logo{
+    width: 340px;
+}
+.titulares {
+    font-size: 24px;
+}
+.precios {
+    font-size: 18px;
+}
+.descuentos {
+    font-size: 16px;
+}
+.descripcion {
+    font-size: 16px;
+}
+.compras{
+    text-align: center;
+}
+.lupa{
+    font-size: 18px;
+    background-color: #ebebeb;
+}
+.burger-menu{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-color: #1259c3;
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.footer{
+    text-align: center;
+    background-color: #ebebeb;
+}
+.footer1{
+    text-align: center;
+    background-color: #ebebeb;
+}
+.icono-footer{
+    size: 2em;
+    color: #1259c3;
+}
+.bloque-texto{
+    font-size: 12px;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    display: inline-flexbox;
+}
