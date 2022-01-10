@@ -1,17 +1,22 @@
 const express = require('express');
-const path = require('path');
 const app = express();
-
+const path = require('path');
 app.use(express.static('public'));
 
-app.listen('3030',()=> console.log('Servidor corriendo en puerto 3030'));
+const port= process.env.PORT || 3030;
+app.listen(port, () => {
+    console.log("Servidor corriendo en puerto: ${port} ");
+})
+/*app.listen('3030',()=> console.log('Servidor corriendo en puerto 3030'));*/
 
-app.get('/', (req,res)=>{
+
+app.get('/', (req, res)=>{
     res.sendFile(path.resolve('./views/home.html'));
-})
-app.get('/register', (req,res)=>{
+});
+app.get('/register', (req, res)=>{
     res.sendFile(path.resolve('./views/register.html'));
-})
-app.get('/login', (req,res)=>{
+});
+
+app.get('/login', (req, res)=>{
     res.sendFile(path.resolve('./views/login.html'));
-})
+});

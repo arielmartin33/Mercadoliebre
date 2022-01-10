@@ -7,15 +7,26 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: auto;
+    background-color: #ebebeb;
 }
 
 .header-container{
     background-color:#EAC926;
-    padding: 20px;
+    border: solid #EAC926;
+    margin: 0%;
+    margin-bottom: 0;
+    position: fixed;
+    /* top: 0px; */
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
    
 }
 .logo{
-    width: 200px; 
+    width: 100px;
+    height: auto; 
 }
 .copy{
     font-weight: 400;
@@ -84,61 +95,118 @@ body {
     width: 70%;
 }
 .main-container{
-    background-color: #ebebeb;
+    display: block;
+    position: relative;
+    top: 150px;
     margin-right: auto;
     margin-left: auto;
-    padding:0px 0px 5px 0px;
+    width: 90%;
 }
-
+.logo-fiestas {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
 .ultima-visita, .ofertas {
     width: 90%;
     margin: auto;
 }
-.articulo{
-    margin-top: 10px;
-    border-top: 1px;
-    border-top-color: #ebebeb;
-    margin: 15px;
-}
-.articulo i {
-display: block;
- font-size: 16px;
- padding: 5px;
- width: 30px;
- height: 30px;
- border: 1px solid #39b54a;
- background-color: #FFF;
- color: #39b54a;
- border-radius: 50%;
- position: relative;
- right: 20px;
- top: -15px;
-
-}
-.detalle{
-    background-color: #ffffff;
+.producto {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
 }
 
-.img { 
-    width: 100%;
-    height: 100%;
+article {
+    margin-bottom: 10px;
+    position: relative;
 }
-.circulo-envio{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 1px#39b54a solid;
-    font-size: 20px;
-    text-align: center;
+.producto article {
+    flex-wrap: wrap;
+}
+.productos article {
+    transition: max-height 0.5s;
+}
+
+main article:hover .logo-envio {
+    transform: rotate(-90deg);
+}
+
+main article .logo-envio {
+    transition: transform 0.5s;
+}
+
+main article h4.desc {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    z-index: -1;
+    opacity: 0;
+}
+main article:hover h4.desc {
+    display: block;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    opacity: 1;
+}
+article {
+    margin-bottom: 10px;
+    position: relative;
+}
+article h3.descuento {
+    font-size: 16px;
     color: #39b54a;
-    margin-top: 5px;
-    justify-content: center;
 }
-.icono-envio{
+article h3.precio{
+    font-size: 18px;
+    margin-left: 2%;
+}
+article h4 {
+    margin-left: 2%;
+    color: #666;
+}
+.precio-descuento {
     display: flex;
+  }
+  
+.precio-descuento h3.precio {
+    flex-grow: 0.3;
+  }
+
+.precio-descuento h3.descuento {
+    flex-grow: 0.7;
+  }
+
+.detalle {
+  border-top: 0, 1% solid #ebebeb;
+  padding: 15px;
+  background-color: white;
 }
+
+.responsive { 
+    width: 100%;
+    height: auto;
+}
+.icono-envio {
+  color: #39b54a;
+  display: block;
+  position: absolute;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+  background-color: #fff;
+  right: 5px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-top: -30px;
+}
+
 .footer-container{
     text-align: center;
     margin: 10px;
@@ -169,19 +237,6 @@ display: block;
 .forma-pago{
     font-size: 12px;
 }
-.main-container{
-    width: 90%;
-    background-color: #ebebeb;
-    margin-right: auto;
-    margin-left: auto;
-
-}
-.articulo{
-    margin-bottom: 10px;
-    border-top: 1px;
-    border-top-color: #ebebeb;
-    margin: 15px;
-}
 
 .detalle{
     border-top: 1px #ebebeb solid;
@@ -190,6 +245,7 @@ display: block;
 }
 .form-registro{
     padding: 20px 15px;
+    margin-top: 240px;
 }
 .control-formulario{
     margin-bottom: 15px;
@@ -220,6 +276,7 @@ display: block;
         justify-content: space-between;
     }
     .copy{
+        display: inline-block;
         max-width:none;
         text-align: right;
     }
